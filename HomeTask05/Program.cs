@@ -10,13 +10,13 @@ double numberB = Convert.ToDouble(Console.ReadLine());
 
 if (numberA < numberB)
     {
-        Console.WriteLine("");
+        Console.WriteLine(""); //для красоты вывода
         Console.WriteLine($"Число {numberB} большее");
         Console.WriteLine($"Число {numberA} меньшее");
     }
 else 
     {
-        Console.WriteLine("");
+        Console.WriteLine(""); //для красоты вывода
         Console.WriteLine($"Число {numberA} большее");
         Console.WriteLine($"Число {numberB} меньшее");
     }
