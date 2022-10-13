@@ -10,7 +10,7 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 int lastDigit = number % 10; // 456 % 10 = 6   456 / 10 = 45
 
-if (number > 100 && number < 1000)
+if (number > 99 && number < 1000)
     {
         Console.WriteLine($"Последняя цифра числа = {lastDigit} ");
     }
