@@ -23,5 +23,7 @@ else if (numberB == (numberA * numberA))
 }
 else
 {
-    Console.Write($"Число {numberB} не является квадратом {numberA} или число {numberA} не является квадратом {numberB}");
+    Console.WriteLine("");
+    Console.WriteLine($"Число {numberB} не является квадратом числа {numberA}");
+    Console.WriteLine($"число {numberA} не является квадратом числа {numberB}");
 }
