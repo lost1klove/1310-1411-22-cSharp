@@ -7,10 +7,11 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 int count = 2;
 
-if (number > 0 )
+if (number > 0)
 
 {
-    while (number >= count)
+    while (number > count) // если сделать условие number >= count, то выдает и самое максимальное четное число,
+    //в случае если N четное. в условии от 1 до N, то есть промежуток.
     {
         Console.Write($"{count} ");
         count = count + 2;
