@@ -29,10 +29,10 @@ Console.WriteLine($"Ваше случайное число : {number}") ;
 // //  логика метода
 // // }
 
-int MaxDigit(int number)
+int MaxDigit(int num)
 {
-    int firstDigit = number / 10;
-    int secondDigit = number % 10;
+    int firstDigit = num / 10;
+    int secondDigit = num % 10;
     return firstDigit > secondDigit ? firstDigit : secondDigit;
 }
 int maxDigit = MaxDigit(number);
