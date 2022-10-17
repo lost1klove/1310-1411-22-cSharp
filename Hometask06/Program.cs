@@ -1,27 +1,18 @@
 ﻿// Напишите программу, которая 
-// 1. принимает на вход три числа и
-// 2. выдаёт максимальное из этих чисел.
+// (1)на вход принимает число и 
+// (2)выдаёт, является ли число чётным (делится ли оно на два без остатка).
 
-Console.WriteLine("Введите первое число : ");
+Console.WriteLine("Введите число : ");
 double numberA = Convert.ToDouble(Console.ReadLine());
 
-Console.WriteLine("Введите второе число : ");
-double numberB = Convert.ToDouble(Console.ReadLine());
 
-Console.WriteLine("Введите третье число : ");
-double numberC = Convert.ToDouble(Console.ReadLine());
-
-double max = numberA;
-
-while(max < numberB || max < numberC)
+if (numberA % 2 == 0)
 {
-    if (max <= numberB)
-    {
-    max = numberB;
-    }
-    if (max < numberC)
-    {
-        max = numberC;
-    }    
+    Console.WriteLine($"Да, число четное.");
 }
-Console.WriteLine($"Максимальное число = {max}");
+else 
+{
+    Console.WriteLine($"Число не является четным.");
+}
+
+
