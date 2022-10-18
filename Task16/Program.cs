@@ -7,16 +7,24 @@
 // 8,9 -> нет
 
 Console.WriteLine("Введите число А : ");
-double numberA = Convert.ToDouble(Console.ReadLine());
-
+int numberA = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число В : ");
-double numberB = Convert.ToDouble(Console.ReadLine());
+int numberB = Convert.ToInt32(Console.ReadLine());
 
-if (numberA == (numberB * numberB) && numberB/numberA==0)
+int result1 = (numberA * numberA);
+int result2 = (numberB * numberB);
+
+
+if (result1 == numberB || result2 == numberA)
 {
-    Console.Write($"число {numberA} является квадратом числа {numberB}");
+    Console.WriteLine("да");
 }
-// else if (numberB == (numberA * numberA))
-// {
+else
+{
+    Console.WriteLine("нет");
+}
+
+
+
+//     Console.Write($"число {numberA} является квадратом числа {numberB}");
 //     Console.Write($"число {numberB} является квадратом числа {numberA}");
-// }
