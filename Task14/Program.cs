@@ -34,4 +34,4 @@ bool result = DivNum(number, number1, number2);
 if (result)
     Console.WriteLine("Кратно");
 else
-    Console.WriteLine($"Не кратно");
+    Console.WriteLine("Не кратно");
