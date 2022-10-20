@@ -9,3 +9,23 @@
 // 4 | 64
 // 5 | 125
 
+void IntoCube(int cube)
+{
+    int count = 1;
+    if (cube > 0)
+        while (cube >= count)
+        {
+            double countcube = Math.Pow(count, 3);
+            Console.WriteLine($"{count,4} -> {countcube,4}");
+            count++;
+        }
+    else
+    {
+        Console.WriteLine("Введите натуральное число!");
+    }
+}
+
+Console.WriteLine("Введите число");
+int number = Convert.ToInt32(Console.ReadLine());
+
+IntoCube(number);
