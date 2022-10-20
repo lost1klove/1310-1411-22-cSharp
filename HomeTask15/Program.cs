@@ -20,14 +20,9 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 bool DayOfWeek(int num)
 {
-    if (num != 1 && num != 2 && num != 3 && num != 4 && num != 5)
-    {
+    if (num >= 1 && num <= 5) return false;
     return true;
-    }
-    else
-    {
-    return false;
-    }
+    
 }
 
 if (number>0 && number<8) //Проверка числа

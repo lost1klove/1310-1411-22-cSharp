@@ -8,22 +8,28 @@
 
 Console.WriteLine("Введите число : ");
 long number = Convert.ToInt64(Console.ReadLine());
-long result = 0;
-long numberLast = number;
+
 
 long TransofrmToThreeDigit(long num)
 {
+    while (num > 1000)
+    {
     long firstMove = num / 10;
-    return firstMove;
+    num = firstMove;
+    }
+    long secondMove = num % 10;
+    return secondMove;
+    
 }
-while (number > 1000)
-{
-result = TransofrmToThreeDigit(number);
-number = result;
-}
-result = result % 10;
+// while (number > 100)
+// {
+// result = TransofrmToThreeDigit(number);
+// number = result;
+// }
+// result = result % 10;
 
 if (number > 99)
-    Console.WriteLine($"Третья цифра числа {numberLast} : " + result);
+    Console.WriteLine($"Третья цифра числа {number} : " + TransofrmToThreeDigit(number));
 else 
-    Console.WriteLine($"Третьей цифры в числе {numberLast} нет!");
+    Console.WriteLine($"Третьей цифры в числе {number} нет!");
+
