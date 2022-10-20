@@ -17,7 +17,7 @@ int nekratno = numberA % numberB;
 while (numberA != 0 && numberB != 0)
 {
     if (numberA % numberB == 0)
-
+    {
         Console.WriteLine("Кратно");
         break;
     }
