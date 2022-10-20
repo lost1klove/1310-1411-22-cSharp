@@ -10,13 +10,13 @@ if (number > 10000 && number < 100000)
 {
 string Palimdrom(int num)
 {
-    int pal = 0;
+    int palim = 0;
     string res ="";
     while (num % 10 > 0)
     {
-    pal = num % 10;
+    palim = num % 10;
     num = num / 10;
-    res += pal;
+    res += palim;
     }   
     return res;
 }
@@ -32,5 +32,3 @@ else
 {
     Console.WriteLine("Вы ввели некорректное значение");
 }
-
-
