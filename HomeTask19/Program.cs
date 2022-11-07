@@ -10,15 +10,15 @@ if (number > 10000 && number < 100000)
 {
 string Palimdrom(int num)
 {
-    int palim = 0;
-    string res ="";
-    while (num % 10 > 0)
+    int palim = 0; //объявляем переменную
+    string res =""; //объявляем переменную
+    while (num % 10 > 0) // цикл вайл пока изначальное деление с остатком больше 0
     {
-    palim = num % 10;
-    num = num / 10;
-    res += palim;
+    palim = num % 10; // делим введенное на 10 с остатком
+    num = num / 10; // введенное на 10 без остатка
+    res += palim; //в строковую переменную добавляем получившийся символ
     }   
-    return res;
+    return res; //возвращаем
 }
 
 string result = Palimdrom(number);
