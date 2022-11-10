@@ -23,8 +23,7 @@ void PrintArray(int[] array)
     {
         Console.Write(array[i] + ",");
     }
-    Console.Write(array[num-1]);
-    Console.Write("]");
+    Console.Write(array[num-1] + "]");
 }
 
 int[] addArray = AddArray(num);
