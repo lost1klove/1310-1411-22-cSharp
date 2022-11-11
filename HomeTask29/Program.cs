@@ -11,7 +11,7 @@ int[] AddArray(int amount)
     Random rnd = new Random();
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = rnd.Next(-100, 101);
+        array[i] = rnd.Next(-9, 10);
     }
     return array;
 }
@@ -23,8 +23,9 @@ void PrintArray(int[] array)
     {
         Console.Write(array[i] + ",");
     }
-    Console.Write(array[num-1] + "]");
+    Console.Write(array[num - 1] + "]");
 }
 
 int[] addArray = AddArray(num);
 PrintArray(addArray);
+
