@@ -12,10 +12,6 @@ double k2 = Convert.ToDouble(Console.ReadLine());
 Console.Write("Введите b2: ");
 double b2 = Convert.ToDouble(Console.ReadLine());
 
-if (k1==k2)
-Console.WriteLine("Прямые параллельны и не могут пересекаться!");
-else
-{
 double[] Intersection(double kOne, double bOne, double kTwo, double bTwo)
 {
     double x = (bTwo - bOne) / (kOne - kTwo);
@@ -38,8 +34,11 @@ void PrintArray(double[] array)
     Console.WriteLine("]");
 }
 
+if (k1==k2)
+Console.WriteLine("Прямые параллельны и не могут пересекаться!");
+else
+{
 double[] resultArray = Intersection(k1,b1,k2,b2);
-
 Console.Write("Прямые пересекаются в точке с координатами : ");
 PrintArray(resultArray);
 }
