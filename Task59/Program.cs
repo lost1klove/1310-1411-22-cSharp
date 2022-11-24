@@ -83,10 +83,6 @@ int[,] NewSortedMatrix(int[,] matrix, int res1, int res2)
     return newMatrix;
 }
 
-
-
-
-
 Console.WriteLine("Введите количество строк");
 int row = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите количество столбцов");
