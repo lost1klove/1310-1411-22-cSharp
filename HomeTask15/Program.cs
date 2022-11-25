@@ -22,7 +22,6 @@ bool DayOfWeek(int num)
 {
     if (num >= 1 && num <= 5) return false;
     return true;
-    
 }
 
 if (number>0 && number<8) //Проверка числа

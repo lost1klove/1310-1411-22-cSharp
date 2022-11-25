@@ -37,7 +37,7 @@ int EvenNumberOfArray(int[] array)
         count++;
     }
     return count;
-}
+} 
 
 int[] rndArray = AddArrayRnd(num);
 int result = EvenNumberOfArray(rndArray);
