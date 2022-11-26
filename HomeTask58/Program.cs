@@ -63,8 +63,8 @@ int col2 = Convert.ToInt32(Console.ReadLine());
 
 if (row1 == col2)
 {
-int[,] firstMatrix2D = CreateMatrixRndArray(row1, col1, 1, 49);
-int[,] secondMatrix2D = CreateMatrixRndArray(row2, col2, 1, 49);
+int[,] firstMatrix2D = CreateMatrixRndArray(row1, col1, 1, 50);
+int[,] secondMatrix2D = CreateMatrixRndArray(row2, col2, 1, 50);
 int[,] resultMatrix2D = MultipleMatrix(firstMatrix2D,secondMatrix2D);
 Console.WriteLine($"Исходные матрицы : ");
 PrintMatrix(firstMatrix2D);

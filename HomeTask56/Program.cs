@@ -72,7 +72,7 @@ int NumberOfMinRow(int[] array)
         if (array[i] < minSumm)
         {
             minSumm = array[i];
-            minCount = i+1;
+            minCount = i+1;//выводится именно номер строки, а не индекса
         }
     }
     return minCount;
@@ -82,14 +82,11 @@ Console.WriteLine("Введите количество строк");
 int row = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите количество столбцов");
 int col = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите минимальное число в массиве (от -99999 до 99999)");
-int minElement = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите максимальное число в массиве (от -99999 до 99999)");
-int maxElement = Convert.ToInt32(Console.ReadLine());
 
-if (minElement >= -99999 && minElement <= 99999 && maxElement >= -99999 && maxElement <= 99999 && minElement <= maxElement)
+
+if (row != col)
 {
-    int[,] matrix2D = CreateMatrixRndArray(row, col, minElement, maxElement);
+    int[,] matrix2D = CreateMatrixRndArray(row, col, 1, 99);
     int[] rowSummArray = SummRowsInArray(matrix2D);
     int minRow = NumberOfMinRow(rowSummArray);
     // Console.WriteLine("Массив, заполненный случайными целыми числами");
@@ -101,4 +98,4 @@ if (minElement >= -99999 && minElement <= 99999 && maxElement >= -99999 && maxEl
     // Console.WriteLine();
     Console.WriteLine($"Номер строки с наименьшей суммой элементов : {minRow}");
 }
-else Console.WriteLine("Введите корректные значения!");
+else Console.WriteLine("Массив не является прямоугольным!");
