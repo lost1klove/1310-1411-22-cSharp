@@ -16,7 +16,7 @@ int Akkerman(int a, int b)
 if (numberA >= 0 && numberB >= 0)
 {
     int akkerman = Akkerman(numberA, numberB);
-    Console.WriteLine($"Значение функции Аккермана => {akkerman}");
+    Console.WriteLine($"Значение функции Аккермана({numberA},{numberB}) => {akkerman}");
 }
 else
 {
